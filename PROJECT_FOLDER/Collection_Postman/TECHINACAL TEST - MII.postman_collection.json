@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "7a5226ea-f107-4aba-bf84-4e6beb55b9f9",
+		"name": "TECHINACAL TEST - MII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23299250",
+		"_collection_link": "https://warped-water-297451-1.postman.co/workspace/My-Workspace~f51dceab-8f5c-406c-8384-eb43e8db6590/collection/23299250-7a5226ea-f107-4aba-bf84-4e6beb55b9f9?action=share&source=collection_link&creator=23299250"
+	},
+	"item": [
+		{
+			"name": "EMPLOYEE",
+			"item": [
+				{
+					"name": "GET ALL EMPLOYEE inc RELATIONAL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMPLOYEE insert 4 Tabel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11013\",\r\n    \"employee_name\": \"Anto Depok\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2022-12-12\",\r\n    \"end_date\": \"2022-12-12\",\r\n    \"created_by\": \"Admin\",\r\n    \"employee_place_of_birth\": \"Depoksss\",\r\n    \"employee_date_of_birth\": \"2022-12-12\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"family_name\": \"Family namess\",\r\n    \"identifier\": \"123123124\",\r\n    \"job\": \"Pelajar\",\r\n    \"family_place_of_birth\": \"Family Depok\",\r\n    \"family_date_of_birth\": \"2022-06-06\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": \"True\",\r\n    \"is_divorced\": \"false\",\r\n    \"relation_status\": \"Anak\",\r\n    \"education_name\": \"SMK Perintis\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMK\",\r\n    \"updated_by\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees"
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees/1"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11013\",\r\n    \"employee_name\": \"EDIT\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2022-12-12\",\r\n    \"end_date\": \"2022-12-12\",\r\n    \"created_by\": \"Admin\",\r\n    \"employee_place_of_birth\": \"Depoksss\",\r\n    \"employee_date_of_birth\": \"2022-12-12\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"family_name\": \"Family namess\",\r\n    \"identifier\": \"123123124\",\r\n    \"job\": \"Pelajar\",\r\n    \"family_place_of_birth\": \"Family Depok\",\r\n    \"family_date_of_birth\": \"2022-06-06\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": \"True\",\r\n    \"is_divorced\": \"false\",\r\n    \"relation_status\": \"Anak\",\r\n    \"education_name\": \"SMK Perintis\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMK\",\r\n    \"updated_by\": \"admins\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees/28"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11013\",\r\n    \"name\": \"Anto edit lagi\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2022-12-12\",\r\n    \"end_date\": \"2022-12-12\",\r\n    \"updated_by\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees/11"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE PROFILE",
+			"item": [
+				{
+					"name": "GET ALL EMPLOYEE PROFILE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/employees-profile"
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMPLOYEE PROFILE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"28\",\r\n    \"place_of_birth\": \"Depoksss\",\r\n    \"date_of_birth\": \"2022-12-12\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-profile"
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEE PROFILE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-profile/1"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE PROFILE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"28\",\r\n    \"place_of_birth\": \"Depoksss\",\r\n    \"date_of_birth\": \"2022-12-12\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"is_married\": true,\r\n    \"prof_pict\": \"\",\r\n    \"updated_by\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-profile/11"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE PROFILE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11013\",\r\n    \"name\": \"Anto edit lagi\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2022-12-12\",\r\n    \"end_date\": \"2022-12-12\",\r\n    \"updated_by\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-profile/28"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE FAMILY",
+			"item": [
+				{
+					"name": "GET ALL EMPLOYEE FAMILY",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://127.0.0.1:8000/api/employees-family"
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMPLOYEE FAMILY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"16\",\r\n    \"family_name\": \"Family namess\",\r\n    \"identifier\": \"123123124\",\r\n    \"job\": \"Pelajar\",\r\n    \"family_place_of_birth\": \"Family Depok\",\r\n    \"family_date_of_birth\": \"2022-06-06\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-family"
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEE FAMILY",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-family/1"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE FAMILY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": \"26\",\r\n    \"family_name\": \"Family namess\",\r\n    \"identifier\": \"123123124\",\r\n    \"job\": \"Pelajar\",\r\n    \"family_place_of_birth\": \"Family Depok\",\r\n    \"family_date_of_birth\": \"2022-06-06\",\r\n    \"religion\": \"Islam\",\r\n    \"is_life\": true,\r\n    \"is_divorced\": false,\r\n    \"relation_status\": \"Anak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-family/7"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE FAMILY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"11013\",\r\n    \"name\": \"Anto edit lagi\",\r\n    \"is_active\": true,\r\n    \"start_date\": \"2022-12-12\",\r\n    \"end_date\": \"2022-12-12\",\r\n    \"updated_by\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-family/7"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE EDUCATIONS",
+			"item": [
+				{
+					"name": "GET ALL EMPLOYEE EDUCATION",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://127.0.0.1:8000/api/employees-education"
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE EMPLOYEE EDUCATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"employee_id\": \"16\",\r\n    \"name\": \"SMK Perintis\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMK\",\r\n    \"created_by\": \"admins\",\r\n    \"updated_by\": \"admins\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-education"
+					},
+					"response": []
+				},
+				{
+					"name": "GET EMPLOYEE EDUCATION",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-education/1"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPLOYEE EDUCATION",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"employee_id\": \"16\",\r\n    \"name\": \"SMK Perintis 1\",\r\n    \"level\": \"Sma\",\r\n    \"description\": \"SMK\",\r\n    \"created_by\": \"admins\",\r\n    \"updated_by\": \"admins\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-education/5"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPLOYEE EDUCATION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/employees-education/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPLOYEE REPORT",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/employees-report"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
